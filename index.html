@@ -1,0 +1,2441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>PawCare</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+<style>
+  :root{
+    --primary:#1d4ed8;
+    --primary-dark:#0f172a;
+    --primary-soft:#dbeafe;
+    --secondary:#2563eb;
+    --accent:#38bdf8;
+    --heading:#1f2937;
+    --text:#475569;
+    --light:#f8fbff;
+    --white:#ffffff;
+    --muted:#64748b;
+    --shadow:rgba(37,99,235,0.18);
+  }
+
+  body{
+    color:var(--text);
+    background:var(--white);
+  }
+
+  .wrap,
+  .ftco_navbar,
+  .ftco-section.bg-light,
+  .ftco-counter,
+  .ftco-appointment .overlay,
+  .hero-wrap .overlay,
+  .testimony-section .overlay{
+    background-color:var(--primary) !important;
+  }
+
+  .navbar-brand,
+  .navbar-brand span,
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-item.active .nav-link,
+  .btn-primary,
+  .btn-custom,
+  .services.active .btn-custom,
+  .services:hover .btn-custom,
+  .icon,
+  .ftco-counter .number,
+  .card .btn-link,
+  .pricing .price .number,
+  .block-7 .btn,
+  .footer .ftco-footer-social a,
+  .btn.btn-primary,
+  .appointment .btn-primary{
+    color:var(--white) !important;
+  }
+
+  .ftco_navbar .navbar-nav .nav-item .nav-link{
+    color:rgba(255,255,255,0.9);
+  }
+
+  .ftco_navbar .navbar-nav .nav-item.active .nav-link{
+    color:var(--white);
+  }
+
+  .ftco_navbar .navbar-nav .nav-item .nav-link:hover{
+    color:var(--white);
+  }
+
+  .ftco_navbar .navbar-toggler{
+    border-color:rgba(255,255,255,0.4);
+  }
+
+  .btn-primary,
+  .btn-custom,
+  .block-7 .btn,
+  .appointment .btn-primary{
+    background:linear-gradient(135deg,var(--secondary),var(--primary));
+    border:none;
+    box-shadow:0 10px 20px var(--shadow);
+  }
+
+  .btn-primary:hover,
+  .btn-custom:hover,
+  .block-7 .btn:hover,
+  .appointment .btn-primary:hover{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+  }
+
+  .services.active,
+  .services:hover{
+    border-color:rgba(37,99,235,0.3);
+    box-shadow:0 20px 35px rgba(29,78,216,0.12);
+  }
+
+  .services .icon,
+  .services-2 .icon{
+    background:var(--primary-soft);
+    color:var(--primary);
+  }
+
+  .icon span,
+  .services .heading,
+  .services-2 h4,
+  .heading-section h2,
+  .testimony-wrap .name,
+  .pricing .excerpt,
+  .cta-title,
+  .footer-heading{
+    color:var(--heading) !important;
+  }
+
+  .ftco-counter{
+    background:linear-gradient(180deg,#eff6ff 0%,#dbeafe 100%);
+  }
+
+  .myaccordion .btn-link{
+    color:var(--heading) !important;
+    background:var(--white);
+    border:1px solid rgba(37,99,235,0.08);
+  }
+
+  .myaccordion .btn-link[aria-expanded="true"]{
+    background:var(--primary-soft);
+  }
+
+  .card{
+    border:1px solid rgba(37,99,235,0.08);
+  }
+
+  .testimony-section{
+    background-position:center center;
+    background-size:cover;
+  }
+
+  .testimony-wrap{
+    background:rgba(255,255,255,0.96);
+  }
+
+  .testimony-wrap .icon{
+    background:var(--primary-soft);
+    color:var(--primary);
+  }
+
+  .block-7{
+    background:var(--white);
+    border:1px solid rgba(37,99,235,0.08);
+  }
+
+  .block-7 .excerpt{
+    color:var(--primary);
+  }
+
+  .pricing-text li .fa-check{
+    color:var(--primary);
+  }
+
+  .footer{
+    background:#0f172a;
+  }
+
+  .footer p,
+  .footer a,
+  .footer .text,
+  .footer .list-unstyled a,
+  .footer .block-21 .text a,
+  .footer .block-23 ul li{
+    color:rgba(255,255,255,0.8);
+  }
+
+  .footer-heading{
+    color:var(--white) !important;
+  }
+
+  .ftco-footer-social a{
+    background:rgba(255,255,255,0.08);
+  }
+
+  .ftco-footer-social a:hover{
+    background:var(--primary);
+  }
+
+  .form-control:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 0.2rem rgba(37,99,235,0.15);
+  }
+
+  .img,
+  .work,
+  .blog-entry .block-20,
+  .block-21 .img,
+  .user-img{
+    background-size:cover !important;
+    background-position:center !important;
+  }
+
+  .img,
+  .work,
+  .blog-entry .block-20,
+  .block-21 .img,
+  .hero-wrap,
+  .testimony-section,
+  .ftco-appointment{
+    filter:saturate(0.9) contrast(1.04);
+  }
+
+  .copyright a{
+    color:#93c5fd !important;
+  }
+
+  .wrap a,
+  .phone a,
+  .social-media a{
+    color:var(--white) !important;
+  }
+
+  .wrap a:hover,
+  .phone a:hover,
+  .social-media a:hover{
+    color:var(--white) !important;
+    opacity:.85;
+  }
+
+  .hero-wrap .overlay{
+    background:rgba(15,23,42,0.60) !important;
+  }
+
+  .hero-wrap h1,
+  .hero-wrap p,
+  .hero-wrap p a{
+    color:var(--white) !important;
+  }
+
+  .services p,
+  .services-2 p,
+  .heading-section p,
+  .card-body{
+    color:var(--text);
+  }
+
+  .ftco-counter .text span{
+    color:var(--heading) !important;
+  }
+
+  .ftco-counter .number{
+    color:var(--primary) !important;
+  }
+
+  .icon-video{
+    background:var(--secondary) !important;
+    color:var(--white) !important;
+    cursor:pointer;
+    text-decoration:none !important;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    transition:all .3s ease;
+    position:relative;
+    z-index:5;
+  }
+
+  .icon-video:hover{
+    background:var(--primary) !important;
+    color:var(--white) !important;
+    transform:scale(1.08);
+  }
+
+  .icon-video .fa{
+    font-size:25px;
+    margin-left:4px;
+  }
+
+  .ftco-appointment h2{
+    color:var(--white) !important;
+  }
+
+  .pawcare-video-modal{
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.92);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:25px;
+  }
+
+  .pawcare-video-modal.active{
+    display:flex;
+  }
+
+  .pawcare-video-box{
+    width:100%;
+    max-width:1000px;
+    position:relative;
+  }
+
+  .pawcare-video-close{
+    position:absolute;
+    right:-5px;
+    top:-50px;
+    width:42px;
+    height:42px;
+    border:0;
+    background:transparent;
+    color:white;
+    font-size:38px;
+    line-height:38px;
+    cursor:pointer;
+    z-index:10;
+  }
+
+  .pawcare-video-frame{
+    position:relative;
+    width:100%;
+    background:#000;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 20px 70px rgba(0,0,0,.5);
+  }
+
+  .pawcare-video-frame video{
+    display:block;
+    width:100%;
+    max-height:80vh;
+    background:#000;
+  }
+
+  body.video-open{
+    overflow:hidden;
+  }
+
+  @media(max-width:767px){
+
+    .pawcare-video-modal{
+      padding:15px;
+    }
+
+    .pawcare-video-close{
+      right:0;
+      top:-45px;
+    }
+
+    .icon-video{
+      width:65px;
+      height:65px;
+    }
+
+  }
+</style>
+</head>
+
+<body>
+
+<!-- BARRA SUPERIOR -->
+<div class="wrap">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 d-flex align-items-center">
+
+        <p class="mb-0 phone pl-md-2">
+
+          <a href="tel:+50499992026" class="mr-2">
+            <span class="fa fa-phone mr-1"></span>
+            +504 9999-2026
+          </a>
+
+          <a href="mailto:info@pawcare.com">
+            <span class="fa fa-paper-plane mr-1"></span>
+            info@pawcare.com
+          </a>
+
+        </p>
+
+      </div>
+
+      <div class="col-md-6 d-flex justify-content-md-end">
+
+        <div class="social-media">
+
+          <p class="mb-0 d-flex">
+
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <span class="fa fa-facebook">
+                <i class="sr-only">Facebook</i>
+              </span>
+            </a>
+
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <span class="fa fa-twitter">
+                <i class="sr-only">Twitter</i>
+              </span>
+            </a>
+
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <span class="fa fa-instagram">
+                <i class="sr-only">Instagram</i>
+              </span>
+            </a>
+
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <span class="fa fa-dribbble">
+                <i class="sr-only">Dribbble</i>
+              </span>
+            </a>
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+
+  <div class="container">
+
+    <a class="navbar-brand" href="index.html">
+      <span class="flaticon-pawprint-1 mr-2"></span>
+      PawCare
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#ftco-nav"
+      aria-controls="ftco-nav"
+      aria-expanded="false"
+      aria-label="Abrir menú">
+
+      <span class="fa fa-bars"></span>
+      Menú
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item active">
+          <a href="index.html" class="nav-link">Inicio</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">Nosotros</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="vet.html" class="nav-link">Estética Canina</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="services.html" class="nav-link">Servicios</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="gallery.html" class="nav-link">Galería</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="pricing.html" class="nav-link">Precios</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contacto</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- HERO -->
+<div
+  class="hero-wrap js-fullheight"
+  style="background-image:url('images/bg_1.jpg');"
+  data-stellar-background-ratio="0.5">
+
+  <div class="overlay"></div>
+
+  <div class="container">
+
+    <div
+      class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+      data-scrollax-parent="true">
+
+      <div class="col-md-11 ftco-animate text-center">
+
+        <h1 class="mb-4">
+          Estética canina profesional para consentir y cuidar a tu mejor amigo
+        </h1>
+
+        <p>
+
+          <a href="#cita" class="btn btn-primary mr-md-4 py-3 px-4">
+
+            Reserva una cita
+
+            <span class="ion-ios-arrow-forward"></span>
+
+          </a>
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- SERVICIOS DESTACADOS -->
+<section class="ftco-section bg-light ftco-no-pt ftco-intro">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
+
+        <div class="d-block services active text-center">
+
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="flaticon-blind"></span>
+          </div>
+
+          <div class="media-body">
+
+            <h3 class="heading">
+              Cortes para Perros
+            </h3>
+
+            <p>
+              Realizamos cortes de pelo según el estilo, tamaño y tipo de pelaje
+              de cada perro, buscando un resultado limpio, cómodo y bonito.
+            </p>
+
+            <a
+              href="services.html"
+              class="btn-custom d-flex align-items-center justify-content-center">
+
+              <span class="fa fa-chevron-right"></span>
+              <i class="sr-only">Ver más</i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
+
+        <div class="d-block services text-center">
+
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="flaticon-dog-eating"></span>
+          </div>
+
+          <div class="media-body">
+
+            <h3 class="heading">
+              Baños para Perros
+            </h3>
+
+            <p>
+              Baños completos con limpieza, enjuague, secado y cuidado del pelaje
+              para que tu mascota quede limpia, fresca y cómoda.
+            </p>
+
+            <a
+              href="services.html"
+              class="btn-custom d-flex align-items-center justify-content-center">
+
+              <span class="fa fa-chevron-right"></span>
+              <i class="sr-only">Ver más</i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
+
+        <div class="d-block services text-center">
+
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="flaticon-grooming"></span>
+          </div>
+
+          <div class="media-body">
+
+            <h3 class="heading">
+              Grooming e Higiene
+            </h3>
+
+            <p>
+              Cepillado, desenredo, secado y cuidados de higiene para mantener
+              el pelaje de tu perro limpio, suave y bien arreglado.
+            </p>
+
+            <a
+              href="services.html"
+              class="btn-custom d-flex align-items-center justify-content-center">
+
+              <span class="fa fa-chevron-right"></span>
+              <i class="sr-only">Ver más</i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- INFORMACIÓN -->
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+
+  <div class="container">
+
+    <div class="row d-flex no-gutters">
+
+      <div class="col-md-5 d-flex">
+
+        <div
+          class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0"
+          style="background-image:url('images/about-1.jpg');">
+        </div>
+
+      </div>
+
+      <div class="col-md-7 pl-md-5 py-md-5">
+
+        <div class="heading-section pt-md-5">
+
+          <h2 class="mb-4">
+            ¿Por qué elegir PawCare?
+          </h2>
+
+          <p>
+            En PawCare nos especializamos en estética canina y trabajamos para
+            que cada perro tenga una experiencia agradable durante su baño o corte.
+          </p>
+
+          <p>
+            Cuidamos cada detalle del proceso con paciencia, limpieza y atención
+            al tipo de pelaje y las necesidades de cada mascota.
+          </p>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 services-2 w-100 d-flex">
+
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-stethoscope"></span>
+            </div>
+
+            <div class="text pl-3">
+
+              <h4>Baño Completo</h4>
+
+              <p>
+                Lavado, enjuague y secado cuidadoso para dejar el pelaje limpio y fresco.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 services-2 w-100 d-flex">
+
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-customer-service"></span>
+            </div>
+
+            <div class="text pl-3">
+
+              <h4>Atención Personalizada</h4>
+
+              <p>
+                Adaptamos el servicio al tamaño, pelaje y estilo que necesita cada perro.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 services-2 w-100 d-flex">
+
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-emergency-call"></span>
+            </div>
+
+            <div class="text pl-3">
+
+              <h4>Corte y Estilo</h4>
+
+              <p>
+                Cortes prácticos y estéticos para que tu mascota luzca limpia y cómoda.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 services-2 w-100 d-flex">
+
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-veterinarian"></span>
+            </div>
+
+            <div class="text pl-3">
+
+              <h4>Cuidado del Pelaje</h4>
+
+              <p>
+                Cepillado, desenredo y secado para mantener el pelo suave y bien cuidado.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTADORES -->
+<section class="ftco-counter" id="section-counter">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+
+        <div class="block-18 text-center">
+
+          <div class="text">
+            <strong class="number" data-number="250">0</strong>
+          </div>
+
+          <div class="text">
+            <span>Perros Consentidos</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+
+        <div class="block-18 text-center">
+
+          <div class="text">
+            <strong class="number" data-number="8">0</strong>
+          </div>
+
+          <div class="text">
+            <span>Servicios de Estética</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+
+        <div class="block-18 text-center">
+
+          <div class="text">
+            <strong class="number" data-number="500">0</strong>
+          </div>
+
+          <div class="text">
+            <span>Baños Realizados</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+
+        <div class="block-18 text-center">
+
+          <div class="text">
+            <strong class="number" data-number="350">0</strong>
+          </div>
+
+          <div class="text">
+            <span>Cortes Realizados</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FAQ + VIDEO -->
+<section class="ftco-section bg-light ftco-faqs">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-6 order-md-last">
+
+        <!-- VIDEO: SE DEJA IGUAL -->
+        <div
+          class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0"
+          style="background-image:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=80');">
+
+          <a
+            href="videos/Video34.mp4"
+            class="icon-video d-flex justify-content-center align-items-center pawcare-video"
+            aria-label="Reproducir video">
+
+            <span class="fa fa-play"></span>
+
+          </a>
+
+        </div>
+
+        <div class="d-flex mt-3">
+
+          <!-- CUARTA IMAGEN -->
+          <div
+            class="img img-2 mr-md-2"
+            style="background-image:url('images/about-2.jpg');">
+          </div>
+
+          <!-- QUINTA IMAGEN -->
+          <div
+            class="img img-2 ml-md-2"
+            style="background-image:url('images/about-3.jpg');">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="heading-section mb-5 mt-5 mt-lg-0">
+
+          <h2 class="mb-3">
+            Preguntas Frecuentes
+          </h2>
+
+          <p>
+            Aquí encontrarás respuestas sobre nuestros baños, cortes y servicios
+            de estética para perros.
+          </p>
+
+        </div>
+
+        <div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
+
+          <div class="card">
+
+            <div class="card-header p-0" id="headingOne">
+
+              <h2 class="mb-0">
+
+                <button
+                  href="#collapseOne"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  aria-expanded="true"
+                  aria-controls="collapseOne">
+
+                  <p class="mb-0">
+                    ¿Qué incluye el baño para perros?
+                  </p>
+
+                  <i class="fa" aria-hidden="true"></i>
+
+                </button>
+
+              </h2>
+
+            </div>
+
+            <div
+              class="collapse show"
+              id="collapseOne"
+              role="tabpanel"
+              aria-labelledby="headingOne">
+
+              <div class="card-body py-3 px-0">
+
+                <ol>
+                  <li>Lavado del pelaje.</li>
+                  <li>Enjuague y limpieza.</li>
+                  <li>Secado cuidadoso.</li>
+                  <li>Cepillado del pelaje.</li>
+                  <li>Terminación e higiene básica.</li>
+                </ol>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="card">
+
+            <div class="card-header p-0" id="headingTwo">
+
+              <h2 class="mb-0">
+
+                <button
+                  href="#collapseTwo"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo">
+
+                  <p class="mb-0">
+                    ¿Qué tipos de cortes realizan?
+                  </p>
+
+                  <i class="fa" aria-hidden="true"></i>
+
+                </button>
+
+              </h2>
+
+            </div>
+
+            <div
+              class="collapse"
+              id="collapseTwo"
+              role="tabpanel"
+              aria-labelledby="headingTwo">
+
+              <div class="card-body py-3 px-0">
+
+                <p>
+                  Realizamos cortes según el estilo solicitado y las características
+                  del pelaje de cada perro, procurando que el resultado sea cómodo,
+                  limpio y bien terminado.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="card">
+
+            <div class="card-header p-0" id="headingThree">
+
+              <h2 class="mb-0">
+
+                <button
+                  href="#collapseThree"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  aria-controls="collapseThree">
+
+                  <p class="mb-0">
+                    ¿Mi perro puede recibir solo un baño?
+                  </p>
+
+                  <i class="fa" aria-hidden="true"></i>
+
+                </button>
+
+              </h2>
+
+            </div>
+
+            <div
+              class="collapse"
+              id="collapseThree"
+              role="tabpanel"
+              aria-labelledby="headingThree">
+
+              <div class="card-body py-3 px-0">
+
+                <p>
+                  Sí. Puedes reservar únicamente el servicio de baño o combinarlo
+                  con corte, cepillado, secado y otros cuidados de estética.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="card">
+
+            <div class="card-header p-0" id="headingFour">
+
+              <h2 class="mb-0">
+
+                <button
+                  href="#collapseFour"
+                  class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                  data-parent="#accordion"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  aria-controls="collapseFour">
+
+                  <p class="mb-0">
+                    ¿Cómo puedo agendar una cita?
+                  </p>
+
+                  <i class="fa" aria-hidden="true"></i>
+
+                </button>
+
+              </h2>
+
+            </div>
+
+            <div
+              class="collapse"
+              id="collapseFour"
+              role="tabpanel"
+              aria-labelledby="headingFour">
+
+              <div class="card-body py-3 px-0">
+
+                <p>
+                  Puedes utilizar el formulario de citas de esta página y seleccionar
+                  el servicio que necesitas para tu perro.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONIOS -->
+<section
+  class="ftco-section testimony-section"
+  style="background-image:url('images/bg_2.jpg');">
+
+  <div class="overlay"></div>
+
+  <div class="container">
+
+    <div class="row justify-content-center pb-5 mb-3">
+
+      <div class="col-md-7 heading-section text-center ftco-animate">
+
+        <h2>
+          Clientes Felices y sus Opiniones
+        </h2>
+
+      </div>
+
+    </div>
+
+    <div class="row ftco-animate">
+
+      <div class="col-md-12">
+
+        <div class="carousel-testimony owl-carousel ftco-owl">
+
+          <!-- PERSON 1 -->
+          <div class="item">
+            <div class="testimony-wrap py-4">
+
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="fa fa-quote-left"></span>
+              </div>
+
+              <div class="text">
+
+                <p class="mb-4">
+                  Mi perro quedó súper limpio y con el corte que quería.
+                  La atención fue muy amable y cuidadosa.
+                </p>
+
+                <div class="d-flex align-items-center">
+
+                  <div
+                    class="user-img"
+                    style="background-image:url('images/person_1.jpg');">
+                  </div>
+
+                  <div class="pl-3">
+                    <p class="name">María López</p>
+                    <span class="position">Cliente PawCare</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PERSON 2 -->
+          <div class="item">
+            <div class="testimony-wrap py-4">
+
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="fa fa-quote-left"></span>
+              </div>
+
+              <div class="text">
+
+                <p class="mb-4">
+                  Me encantó cómo dejaron el pelaje de mi mascota.
+                  El baño y el secado quedaron excelentes.
+                </p>
+
+                <div class="d-flex align-items-center">
+
+                  <div
+                    class="user-img"
+                    style="background-image:url('images/person_3.jpg');">
+                  </div>
+
+                  <div class="pl-3">
+                    <p class="name">Carlos Martínez</p>
+                    <span class="position">Cliente PawCare</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PERSON 3 -->
+          <div class="item">
+            <div class="testimony-wrap py-4">
+
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="fa fa-quote-left"></span>
+              </div>
+
+              <div class="text">
+
+                <p class="mb-4">
+                  Excelente servicio de grooming. Mi perro salió limpio,
+                  perfumado y muy bonito.
+                </p>
+
+                <div class="d-flex align-items-center">
+
+                  <div
+                    class="user-img"
+                    style="background-image:url('images/person_4.jpg');">
+                  </div>
+
+                  <div class="pl-3">
+                    <p class="name">Daniel Rivera</p>
+                    <span class="position">Cliente PawCare</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PERSON 4 -->
+          <div class="item">
+            <div class="testimony-wrap py-4">
+
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="fa fa-quote-left"></span>
+              </div>
+
+              <div class="text">
+
+                <p class="mb-4">
+                  Muy buena atención. Me explicaron el servicio y cuidaron
+                  a mi mascota durante todo el proceso.
+                </p>
+
+                <div class="d-flex align-items-center">
+
+                  <div
+                    class="user-img"
+                    style="background-image:url('images/person_2.jpg');">
+                  </div>
+
+                  <div class="pl-3">
+                    <p class="name">Sofía Hernández</p>
+                    <span class="position">Cliente PawCare</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- QUINTA OPINIÓN: SE CONSERVA SIN CAMBIAR -->
+          <div class="item">
+            <div class="testimony-wrap py-4">
+
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="fa fa-quote-left"></span>
+              </div>
+
+              <div class="text">
+
+                <p class="mb-4">
+                  PawCare se convirtió en nuestro lugar de confianza para
+                  los baños y cortes de nuestro perro.
+                </p>
+
+                <div class="d-flex align-items-center">
+
+                  <div
+                    class="user-img"
+                    style="background-image:url('images/person_2.jpg');">
+                  </div>
+
+                  <div class="pl-3">
+                    <p class="name">Laura Castillo</p>
+                    <span class="position">Cliente PawCare</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PLANES -->
+<section class="ftco-section bg-light">
+
+  <div class="container">
+
+    <div class="row justify-content-center pb-5 mb-3">
+
+      <div class="col-md-7 heading-section text-center ftco-animate">
+
+        <h2>
+          Planes de Estética
+        </h2>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <!-- PRICING 1 -->
+      <div class="col-md-4 ftco-animate">
+        <div class="block-7">
+
+          <div
+            class="img"
+            style="background-image:url('images/pricing-1.jpg');">
+          </div>
+
+          <div class="text-center p-4">
+
+            <span class="excerpt d-block">
+              Baño Básico
+            </span>
+
+            <span class="price">
+              <sup>L</sup>
+              <span class="number">350</span>
+              <sub>/servicio</sub>
+            </span>
+
+            <ul class="pricing-text mb-5">
+
+              <li><span class="fa fa-check mr-2"></span>Baño para perros</li>
+              <li><span class="fa fa-check mr-2"></span>Enjuague y limpieza</li>
+              <li><span class="fa fa-check mr-2"></span>Secado</li>
+              <li><span class="fa fa-check mr-2"></span>Cepillado</li>
+
+            </ul>
+
+            <a href="#cita" class="btn btn-primary d-block px-2 py-3">
+              Reservar cita
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PRICING 2 -->
+      <div class="col-md-4 ftco-animate">
+        <div class="block-7">
+
+          <div
+            class="img"
+            style="background-image:url('images/pricing-2.jpg');">
+          </div>
+
+          <div class="text-center p-4">
+
+            <span class="excerpt d-block">
+              Baño + Corte
+            </span>
+
+            <span class="price">
+              <sup>L</sup>
+              <span class="number">550</span>
+              <sub>/servicio</sub>
+            </span>
+
+            <ul class="pricing-text mb-5">
+
+              <li><span class="fa fa-check mr-2"></span>Baño completo</li>
+              <li><span class="fa fa-check mr-2"></span>Secado y cepillado</li>
+              <li><span class="fa fa-check mr-2"></span>Corte de pelo</li>
+              <li><span class="fa fa-check mr-2"></span>Acabado estético</li>
+
+            </ul>
+
+            <a href="#cita" class="btn btn-primary d-block px-2 py-3">
+              Reservar cita
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PRICING 3 -->
+      <div class="col-md-4 ftco-animate">
+        <div class="block-7">
+
+          <div
+            class="img"
+            style="background-image:url('images/pricing-3.jpg');">
+          </div>
+
+          <div class="text-center p-4">
+
+            <span class="excerpt d-block">
+              Grooming Completo
+            </span>
+
+            <span class="price">
+              <sup>L</sup>
+              <span class="number">750</span>
+              <sub>/servicio</sub>
+            </span>
+
+            <ul class="pricing-text mb-5">
+
+              <li><span class="fa fa-check mr-2"></span>Baño completo</li>
+              <li><span class="fa fa-check mr-2"></span>Corte y estilo</li>
+              <li><span class="fa fa-check mr-2"></span>Cepillado y secado</li>
+              <li><span class="fa fa-check mr-2"></span>Cuidado estético</li>
+
+            </ul>
+
+            <a href="#cita" class="btn btn-primary d-block px-2 py-3">
+              Reservar cita
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALERÍA -->
+<section class="ftco-section">
+
+  <div class="container">
+
+    <div class="row justify-content-center pb-5 mb-3">
+
+      <div class="col-md-7 heading-section text-center ftco-animate">
+
+        <h2>
+          Galería de Perritos
+        </h2>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <!-- GALLERY 1 -->
+      <div class="col-md-4 ftco-animate">
+
+        <div
+          class="work mb-4 img d-flex align-items-end"
+          style="background-image:url('images/gallery-1.jpg');">
+
+          <a
+            href="images/gallery-1.jpg"
+            class="icon image-popup d-flex justify-content-center align-items-center">
+
+            <span class="fa fa-expand"></span>
+
+          </a>
+
+          <div class="desc w-100 px-4">
+
+            <div class="text w-100 mb-3">
+
+              <span>Estética</span>
+
+              <h2>
+                <a href="#">Baño y Cepillado</a>
+              </h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- GALLERY 2 -->
+      <div class="col-md-4 ftco-animate">
+
+        <div
+          class="work mb-4 img d-flex align-items-end"
+          style="background-image:url('images/gallery-2.jpg');">
+
+          <a
+            href="images/gallery-2.jpg"
+            class="icon image-popup d-flex justify-content-center align-items-center">
+
+            <span class="fa fa-expand"></span>
+
+          </a>
+
+          <div class="desc w-100 px-4">
+
+            <div class="text w-100 mb-3">
+
+              <span>Grooming</span>
+
+              <h2>
+                <a href="#">Corte de Pelo</a>
+              </h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- GALLERY 3 -->
+      <div class="col-md-4 ftco-animate">
+
+        <div
+          class="work mb-4 img d-flex align-items-end"
+          style="background-image:url('images/gallery-3.jpg');">
+
+          <a
+            href="images/gallery-3.jpg"
+            class="icon image-popup d-flex justify-content-center align-items-center">
+
+            <span class="fa fa-expand"></span>
+
+          </a>
+
+          <div class="desc w-100 px-4">
+
+            <div class="text w-100 mb-3">
+
+              <span>Baño</span>
+
+              <h2>
+                <a href="#">Baño para Perritos</a>
+              </h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- GALLERY 4 -->
+      <div class="col-md-4 ftco-animate">
+
+        <div
+          class="work mb-4 img d-flex align-items-end"
+          style="background-image:url('images/gallery-4.jpg');">
+
+          <a
+            href="images/gallery-4.jpg"
+            class="icon image-popup d-flex justify-content-center align-items-center">
+
+            <span class="fa fa-expand"></span>
+
+          </a>
+
+          <div class="desc w-100 px-4">
+
+            <div class="text w-100 mb-3">
+
+              <span>Pelaje</span>
+
+              <h2>
+                <a href="#">Cepillado y Secado</a>
+              </h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- GALLERY 5 -->
+      <div class="col-md-4 ftco-animate">
+
+        <div
+          class="work mb-4 img d-flex align-items-end"
+          style="background-image:url('images/gallery-5.jpg');">
+
+          <a
+            href="images/gallery-5.jpg"
+            class="icon image-popup d-flex justify-content-center align-items-center">
+
+            <span class="fa fa-expand"></span>
+
+          </a>
+
+          <div class="desc w-100 px-4">
+
+            <div class="text w-100 mb-3">
+
+              <span>Corte</span>
+
+              <h2>
+                <a href="#">Estilo para Perros</a>
+              </h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- GALLERY 6 -->
+      <div class="col-md-4 ftco-animate">
+
+        <div
+          class="work mb-4 img d-flex align-items-end"
+          style="background-image:url('images/gallery-6.jpg');">
+
+          <a
+            href="images/gallery-6.jpg"
+            class="icon image-popup d-flex justify-content-center align-items-center">
+
+            <span class="fa fa-expand"></span>
+
+          </a>
+
+          <div class="desc w-100 px-4">
+
+            <div class="text w-100 mb-3">
+
+              <span>Grooming</span>
+
+              <h2>
+                <a href="#">Cambio de Look</a>
+              </h2>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BLOG -->
+<section class="ftco-section bg-light">
+
+  <div class="container">
+
+    <div class="row justify-content-center pb-5 mb-3">
+
+      <div class="col-md-7 heading-section text-center ftco-animate">
+
+        <h2>
+          Consejos para el Cuidado del Pelaje
+        </h2>
+
+      </div>
+
+    </div>
+
+    <div class="row d-flex">
+
+      <!-- IMAGE 1 -->
+      <div class="col-md-4 d-flex ftco-animate">
+
+        <div class="blog-entry align-self-stretch">
+
+          <a
+            href="blog.html"
+            class="block-20 rounded"
+            style="background-image:url('images/image_1.jpg');">
+          </a>
+
+          <div class="text p-4">
+
+            <div class="meta mb-2">
+
+              <div>
+                <a href="#">02 de octubre de 2026</a>
+              </div>
+
+              <div>
+                <a href="#">PawCare</a>
+              </div>
+
+              <div>
+                <a href="#" class="meta-chat">
+                  <span class="fa fa-comment"></span>
+                  4
+                </a>
+              </div>
+
+            </div>
+
+            <h3 class="heading">
+              <a href="#">
+                ¿Cada cuánto necesita un perro un baño y un buen cepillado?
+              </a>
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGE 2 -->
+      <div class="col-md-4 d-flex ftco-animate">
+
+        <div class="blog-entry align-self-stretch">
+
+          <a
+            href="blog.html"
+            class="block-20 rounded"
+            style="background-image:url('images/image_2.jpg');">
+          </a>
+
+          <div class="text p-4">
+
+            <div class="meta mb-2">
+
+              <div>
+                <a href="#">02 de octubre de 2026</a>
+              </div>
+
+              <div>
+                <a href="#">PawCare</a>
+              </div>
+
+              <div>
+                <a href="#" class="meta-chat">
+                  <span class="fa fa-comment"></span>
+                  6
+                </a>
+              </div>
+
+            </div>
+
+            <h3 class="heading">
+              <a href="#">
+                Consejos para mantener el pelo de tu perro limpio y bonito
+              </a>
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGE 3 -->
+      <div class="col-md-4 d-flex ftco-animate">
+
+        <div class="blog-entry align-self-stretch">
+
+          <a
+            href="blog.html"
+            class="block-20 rounded"
+            style="background-image:url('images/image_3.jpg');">
+          </a>
+
+          <div class="text p-4">
+
+            <div class="meta mb-2">
+
+              <div>
+                <a href="#">02 de octubre de 2026</a>
+              </div>
+
+              <div>
+                <a href="#">PawCare</a>
+              </div>
+
+              <div>
+                <a href="#" class="meta-chat">
+                  <span class="fa fa-comment"></span>
+                  5
+                </a>
+              </div>
+
+            </div>
+
+            <h3 class="heading">
+              <a href="#">
+                Cómo preparar a tu mascota para su cita de grooming
+              </a>
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CITA -->
+<section
+  class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb img"
+  id="cita"
+  style="background-image:url('images/bg_3.jpg');">
+
+  <div class="overlay"></div>
+
+  <div class="container">
+
+    <div class="row d-md-flex justify-content-end">
+
+      <div class="col-md-12 col-lg-6 half p-3 py-5 pl-lg-5 ftco-animate">
+
+        <h2 class="mb-4">
+          Agenda el Baño o Corte
+        </h2>
+
+        <form action="#" class="appointment">
+
+          <div class="row">
+
+            <div class="col-md-12">
+
+              <div class="form-group">
+
+                <div class="form-field">
+
+                  <div class="select-wrap">
+
+                    <div class="icon">
+                      <span class="fa fa-chevron-down"></span>
+                    </div>
+
+                    <select name="servicio" class="form-control">
+
+                      <option value="">
+                        Selecciona un servicio
+                      </option>
+
+                      <option value="bano">
+                        Baño para Perros
+                      </option>
+
+                      <option value="corte">
+                        Corte de Pelo
+                      </option>
+
+                      <option value="bano-corte">
+                        Baño + Corte
+                      </option>
+
+                      <option value="grooming">
+                        Grooming Completo
+                      </option>
+
+                      <option value="cepillado">
+                        Cepillado y Secado
+                      </option>
+
+                    </select>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="form-group">
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre del propietario">
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="form-group">
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre del perro">
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="form-group">
+
+                <div class="input-wrap">
+
+                  <div class="icon">
+                    <span class="fa fa-calendar"></span>
+                  </div>
+
+                  <input
+                    type="text"
+                    class="form-control appointment_date"
+                    placeholder="Fecha">
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="form-group">
+
+                <div class="input-wrap">
+
+                  <div class="icon">
+                    <span class="fa fa-clock-o"></span>
+                  </div>
+
+                  <input
+                    type="text"
+                    class="form-control appointment_time"
+                    placeholder="Hora">
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-12">
+
+              <div class="form-group">
+
+                <textarea
+                  name="mensaje"
+                  cols="30"
+                  rows="7"
+                  class="form-control"
+                  placeholder="Cuéntanos qué servicio necesita tu perro"></textarea>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-12">
+
+              <div class="form-group">
+
+                <input
+                  type="submit"
+                  value="Solicitar cita"
+                  class="btn btn-primary py-3 px-4">
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+
+        <h2 class="footer-heading">
+          PawCare
+        </h2>
+
+        <p>
+          Estética canina especializada en baños, cortes y cuidado del pelaje
+          para que tu perro luzca limpio, cómodo y feliz.
+        </p>
+
+        <ul class="ftco-footer-social p-0">
+
+          <li class="ftco-animate">
+            <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <span class="fa fa-twitter"></span>
+            </a>
+          </li>
+
+          <li class="ftco-animate">
+            <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <span class="fa fa-facebook"></span>
+            </a>
+          </li>
+
+          <li class="ftco-animate">
+            <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram">
+              <span class="fa fa-instagram"></span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+
+        <h2 class="footer-heading">
+          Consejos Recientes
+        </h2>
+
+        <!-- FOOTER IMAGE 1 -->
+        <div class="block-21 mb-4 d-flex">
+
+          <a
+            class="img mr-4 rounded"
+            style="background-image:url('images/image_1.jpg');">
+          </a>
+
+          <div class="text">
+
+            <h3 class="heading">
+              <a href="#">
+                Cuida el pelaje de tu perro con un buen cepillado
+              </a>
+            </h3>
+
+            <div class="meta">
+
+              <div>
+                <a href="#">
+                  <span class="icon-calendar"></span>
+                  02 de octubre de 2026
+                </a>
+              </div>
+
+              <div>
+                <a href="#">
+                  <span class="icon-person"></span>
+                  PawCare
+                </a>
+              </div>
+
+              <div>
+                <a href="#">
+                  <span class="icon-chat"></span>
+                  8
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- FOOTER IMAGE 2 -->
+        <div class="block-21 mb-4 d-flex">
+
+          <a
+            class="img mr-4 rounded"
+            style="background-image:url('images/image_2.jpg');">
+          </a>
+
+          <div class="text">
+
+            <h3 class="heading">
+              <a href="#">
+                La importancia de los baños y cuidados de higiene
+              </a>
+            </h3>
+
+            <div class="meta">
+
+              <div>
+                <a href="#">
+                  <span class="icon-calendar"></span>
+                  02 de octubre de 2026
+                </a>
+              </div>
+
+              <div>
+                <a href="#">
+                  <span class="icon-person"></span>
+                  PawCare
+                </a>
+              </div>
+
+              <div>
+                <a href="#">
+                  <span class="icon-chat"></span>
+                  5
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+
+        <h2 class="footer-heading">
+          Enlaces Rápidos
+        </h2>
+
+        <ul class="list-unstyled">
+
+          <li>
+            <a href="index.html" class="py-2 d-block">
+              Inicio
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html" class="py-2 d-block">
+              Nosotros
+            </a>
+          </li>
+
+          <li>
+            <a href="vet.html" class="py-2 d-block">
+              Estética Canina
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html" class="py-2 d-block">
+              Servicios
+            </a>
+          </li>
+
+          <li>
+            <a href="gallery.html" class="py-2 d-block">
+              Galería
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="py-2 d-block">
+              Contacto
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+
+        <h2 class="footer-heading">
+          ¿Tienes preguntas?
+        </h2>
+
+        <div class="block-23 mb-3">
+
+          <ul>
+
+            <li>
+              <span class="icon fa fa-map"></span>
+
+              <span class="text">
+                Santa Cruz de Yojoa, Cortés, Honduras
+              </span>
+            </li>
+
+            <li>
+
+              <a href="tel:+50499992026">
+
+                <span class="icon fa fa-phone"></span>
+
+                <span class="text">
+                  +504 9999-2026
+                </span>
+
+              </a>
+
+            </li>
+
+            <li>
+
+              <a href="mailto:info@pawcare.com">
+
+                <span class="icon fa fa-paper-plane"></span>
+
+                <span class="text">
+                  info@pawcare.com
+                </span>
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row mt-5">
+
+      <div class="col-md-12 text-center">
+
+        <p class="copyright">
+
+          Copyright &copy;
+
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+
+          PawCare | Estética Canina y Baños
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- LOADER -->
+<div id="ftco-loader" class="show fullscreen">
+
+  <svg class="circular" width="48px" height="48px">
+
+    <circle
+      class="path-bg"
+      cx="24"
+      cy="24"
+      r="22"
+      fill="none"
+      stroke-width="4"
+      stroke="#eeeeee"/>
+
+    <circle
+      class="path"
+      cx="24"
+      cy="24"
+      r="22"
+      fill="none"
+      stroke-width="4"
+      stroke-miterlimit="10"
+      stroke="#2563eb"/>
+
+  </svg>
+
+</div>
+
+<!-- VENTANA DEL VIDEO -->
+<div
+  id="pawcareVideoModal"
+  class="pawcare-video-modal"
+  aria-hidden="true">
+
+  <div class="pawcare-video-box">
+
+    <button
+      type="button"
+      id="pawcareVideoClose"
+      class="pawcare-video-close"
+      aria-label="Cerrar video">
+
+      &times;
+
+    </button>
+
+    <div class="pawcare-video-frame">
+
+      <video
+        id="pawcareVideo"
+        controls
+        playsinline
+        preload="metadata">
+
+        <source src="videos/Video34.mp4" type="video/mp4">
+
+        Tu navegador no puede reproducir este video.
+
+      </video>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- SCRIPTS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- VIDEO PAWCARE -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const videoButton = document.querySelector(".pawcare-video");
+    const videoModal = document.getElementById("pawcareVideoModal");
+    const video = document.getElementById("pawcareVideo");
+    const videoClose = document.getElementById("pawcareVideoClose");
+
+    if (!videoButton || !videoModal || !video || !videoClose) {
+        return;
+    }
+
+    function abrirVideo() {
+
+        videoModal.classList.add("active");
+        videoModal.setAttribute("aria-hidden", "false");
+
+        document.body.classList.add("video-open");
+
+        video.currentTime = 0;
+
+        video.play().catch(function () {
+            console.log("El video debe iniciarse manualmente.");
+        });
+    }
+
+    function cerrarVideo() {
+
+        video.pause();
+        video.currentTime = 0;
+
+        videoModal.classList.remove("active");
+        videoModal.setAttribute("aria-hidden", "true");
+
+        document.body.classList.remove("video-open");
+    }
+
+    videoButton.addEventListener("click", function (event) {
+
+        event.preventDefault();
+
+        abrirVideo();
+
+    });
+
+    videoClose.addEventListener("click", function () {
+
+        cerrarVideo();
+
+    });
+
+    videoModal.addEventListener("click", function (event) {
+
+        if (event.target === videoModal) {
+
+            cerrarVideo();
+
+        }
+
+    });
+
+    document.addEventListener("keydown", function (event) {
+
+        if (
+            event.key === "Escape" &&
+            videoModal.classList.contains("active")
+        ) {
+
+            cerrarVideo();
+
+        }
+
+    });
+
+});
+</script>
+
+</body>
+</html>

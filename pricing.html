@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>PawCare | Precios de Estética Canina</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/animate.css"> 
+    <link rel="stylesheet" href="css/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="css/magnific-popup.css"> 
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css"> 
+    <link rel="stylesheet" href="css/jquery.timepicker.css"> 
+    <link rel="stylesheet" href="css/flaticon.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+ 
+    <style> 
+      :root{ 
+        --primary:#1d4ed8; 
+        --primary-dark:#0f172a; 
+        --primary-soft:#dbeafe; 
+        --secondary:#2563eb; 
+        --accent:#38bdf8; 
+        --heading:#1f2937; 
+        --text:#475569; 
+        --light:#f8fbff; 
+        --white:#ffffff; 
+        --muted:#64748b; 
+        --shadow:rgba(37,99,235,0.18); 
+      } 
+ 
+      body{color:var(--text);} 
+ 
+      .wrap, 
+      .ftco_navbar, 
+      .ftco-section.bg-light, 
+      .ftco-counter, 
+      .footer, 
+      .ftco-appointment .overlay, 
+      .hero-wrap .overlay, 
+      .testimony-section .overlay{ 
+        background-color:var(--primary)!important; 
+      } 
+ 
+      .navbar-brand, 
+      .navbar-brand span, 
+      .nav-link:hover, 
+      .nav-link:focus, 
+      .nav-item.active .nav-link, 
+      .btn-primary, 
+      .btn-custom, 
+      .services.active .btn-custom, 
+      .services:hover .btn-custom, 
+      .icon, 
+      .ftco-counter .number, 
+      .card .btn-link, 
+      .pricing .price .number, 
+      .block-7 .btn, 
+      .footer .ftco-footer-social a, 
+      .btn.btn-primary, 
+      .appointment .btn-primary{ 
+        color:var(--white)!important; 
+      } 
+ 
+      .ftco_navbar .navbar-nav .nav-item .nav-link{ 
+        color:rgba(255,255,255,.9)!important; 
+      } 
+ 
+      .ftco_navbar .navbar-nav .nav-item.active .nav-link{ 
+        color:var(--white)!important; 
+      } 
+ 
+      .ftco_navbar .navbar-nav .nav-item .nav-link:hover, 
+      .ftco_navbar .navbar-nav .nav-item .nav-link:focus{ 
+        color:var(--white)!important; 
+      } 
+ 
+      .ftco_navbar .navbar-toggler{ 
+        border-color:rgba(255,255,255,.4)!important; 
+      } 
+ 
+      .btn-primary, 
+      .btn-custom, 
+      .block-7 .btn, 
+      .appointment .btn-primary{ 
+        background:linear-gradient(135deg,var(--secondary),var(--primary))!important; 
+        border:none!important; 
+        box-shadow:0 10px 20px var(--shadow)!important; 
+      } 
+ 
+      .btn-primary:hover, 
+      .btn-custom:hover, 
+      .block-7 .btn:hover, 
+      .appointment .btn-primary:hover{ 
+        background:linear-gradient(135deg,var(--primary),var(--secondary))!important; 
+      } 
+ 
+      .block-7{ 
+        background:var(--white)!important; 
+        border:1px solid rgba(37,99,235,.08)!important; 
+      } 
+ 
+      .block-7 .excerpt{ 
+        color:var(--primary)!important; 
+      } 
+ 
+      .block-7 .price .number{ 
+        color:var(--heading)!important; 
+      } 
+ 
+      .block-7 .price sup, 
+      .block-7 .price sub{ 
+        color:var(--muted)!important; 
+      } 
+ 
+      .pricing-text li .fa-check{ 
+        color:var(--primary)!important; 
+      } 
+ 
+      .heading-section h2{ 
+        color:var(--heading)!important; 
+      } 
+ 
+      .ftco-counter{ 
+        background:linear-gradient(180deg,#eff6ff 0%,#dbeafe 100%)!important; 
+      } 
+ 
+      .ftco-counter .number{ 
+        color:var(--primary)!important; 
+      } 
+ 
+      .ftco-counter span{ 
+        color:var(--heading)!important; 
+      } 
+ 
+      .ftco-appointment .overlay, 
+      .hero-wrap .overlay{ 
+        background:rgba(15,23,42,.60)!important; 
+      } 
+ 
+      .ftco-appointment h2, 
+      .hero-wrap-2 h1{ 
+        color:var(--white)!important; 
+      } 
+ 
+      .hero-wrap-2 .breadcrumbs a{ 
+        color:var(--white)!important; 
+      } 
+ 
+      .form-control{ 
+        border:1px solid rgba(37,99,235,.20)!important; 
+      } 
+ 
+      .form-control:focus{ 
+        border-color:var(--primary)!important; 
+        box-shadow:0 0 0 .2rem rgba(37,99,235,.15)!important; 
+      } 
+ 
+      .select-wrap .icon, 
+      .input-wrap .icon{ 
+        color:var(--secondary)!important; 
+      } 
+ 
+      .footer{ 
+        background:#0f172a!important; 
+      } 
+ 
+      .footer p, 
+      .footer a, 
+      .footer .text, 
+      .footer .list-unstyled a, 
+      .footer .block-21 .text a, 
+      .footer .block-23 ul li{ 
+        color:rgba(255,255,255,.8)!important; 
+      } 
+ 
+      .footer-heading{ 
+        color:var(--white)!important; 
+      } 
+ 
+      .ftco-footer-social a{ 
+        background:rgba(255,255,255,.08)!important; 
+      } 
+ 
+      .ftco-footer-social a:hover{ 
+        background:var(--primary)!important; 
+      } 
+ 
+      .copyright a{ 
+        color:#93c5fd!important; 
+      } 
+ 
+      .img, 
+      .work, 
+      .blog-entry .block-20, 
+      .block-21 .img, 
+      .user-img{ 
+        background-size:cover!important; 
+        background-position:center!important; 
+      } 
+ 
+      .hero-wrap, 
+      .ftco-appointment{ 
+        filter:saturate(.9) contrast(1.04); 
+      } 
+ 
+      .wrap a, 
+      .phone a, 
+      .social-media a{ 
+        color:var(--white)!important; 
+      } 
+ 
+      .wrap a:hover, 
+      .phone a:hover, 
+      .social-media a:hover{ 
+        color:var(--white)!important; 
+        opacity:.85; 
+      } 
+ 
+      .pricing-text li{ 
+        margin-bottom:10px; 
+      } 
+    </style> 
+  </head> 
+ 
+  <body> 
+ 
+    <div class="wrap"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col-md-6 d-flex align-items-center"> 
+            <p class="mb-0 phone pl-md-2"> 
+              <a href="#" class="mr-2">
+                <span class="fa fa-phone mr-1"></span> +504 9999-2026
+              </a> 
+              <a href="#">
+                <span class="fa fa-paper-plane mr-1"></span> info@pawcare.com
+              </a> 
+            </p> 
+          </div> 
+
+          <div class="col-md-6 d-flex justify-content-md-end"> 
+            <div class="social-media"> 
+              <p class="mb-0 d-flex"> 
+                <a href="#" class="d-flex align-items-center justify-content-center">
+                  <span class="fa fa-facebook"><i class="sr-only">Facebook</i></span>
+                </a> 
+                <a href="#" class="d-flex align-items-center justify-content-center">
+                  <span class="fa fa-twitter"><i class="sr-only">Twitter</i></span>
+                </a> 
+                <a href="#" class="d-flex align-items-center justify-content-center">
+                  <span class="fa fa-instagram"><i class="sr-only">Instagram</i></span>
+                </a> 
+                <a href="#" class="d-flex align-items-center justify-content-center">
+                  <span class="fa fa-youtube"><i class="sr-only">YouTube</i></span>
+                </a> 
+              </p> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"> 
+      <div class="container"> 
+        <a class="navbar-brand" href="index.html">
+          Paw<span>Care</span>
+        </a> 
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" 
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"> 
+          <span class="fa fa-bars"></span> 
+        </button> 
+
+        <div class="collapse navbar-collapse" id="ftco-nav"> 
+          <ul class="navbar-nav ml-auto"> 
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Inicio</a>
+            </li> 
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">Nosotros</a>
+            </li> 
+            <li class="nav-item">
+              <a href="vet.html" class="nav-link">Estética Canina</a>
+            </li> 
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Servicios</a>
+            </li> 
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Galería</a>
+            </li> 
+            <li class="nav-item active">
+              <a href="pricing.html" class="nav-link">Precios</a>
+            </li> 
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li> 
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contacto</a>
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </nav> 
+
+    <section class="hero-wrap hero-wrap-2" 
+             style="background-image:url('images/bg_1.jpg');" 
+             data-stellar-background-ratio="0.5"> 
+      <div class="overlay"></div> 
+      <div class="container"> 
+        <div class="row no-gutters slider-text align-items-end"> 
+          <div class="col-md-9 ftco-animate pb-5"> 
+            <p class="breadcrumbs mb-2"> 
+              <span class="mr-2">
+                <a href="index.html">
+                  Inicio <i class="ion-ios-arrow-forward"></i>
+                </a>
+              </span> 
+              <span>Precios <i class="ion-ios-arrow-forward"></i></span> 
+            </p> 
+            <h1 class="mb-0 bread">Precios</h1> 
+          </div> 
+        </div> 
+      </div> 
+    </section> 
+
+    <section class="ftco-section bg-light"> 
+      <div class="container"> 
+
+        <div class="row justify-content-center pb-5 mb-3"> 
+          <div class="col-md-7 heading-section text-center ftco-animate"> 
+            <h2>Planes y Servicios</h2> 
+
+            <!-- SOLO ESTA FRASE SE CAMBIÓ A BLANCO -->
+            <p style="color:#ffffff!important;"> 
+              Elige el servicio que mejor se adapte a las necesidades 
+              de tu perro. En PawCare nos enfocamos en baños, cortes y grooming. 
+            </p> 
+          </div> 
+        </div> 
+
+        <div class="row"> 
+
+          <div class="col-md-4 ftco-animate"> 
+            <div class="block-7"> 
+              <div class="img" 
+                   style="background-image:url('images/pricing-1.jpg');">
+              </div> 
+
+              <div class="text-center p-4"> 
+                <span class="excerpt d-block">Baño Básico</span> 
+
+                <span class="price">
+                  <sup>L.</sup>
+                  <span class="number">250</span>
+                  <sub>/sesión</sub>
+                </span> 
+
+                <ul class="pricing-text mb-5"> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Baño con shampoo
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Secado
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Cepillado
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Limpieza de oídos
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Corte de uñas
+                  </li> 
+                </ul> 
+
+                <a href="contact.html" class="btn btn-primary d-block px-2 py-3">
+                  Reservar ahora
+                </a> 
+              </div> 
+            </div> 
+          </div> 
+
+          <div class="col-md-4 ftco-animate"> 
+            <div class="block-7"> 
+              <div class="img" 
+                   style="background-image:url('images/pricing-2.jpg');">
+              </div> 
+
+              <div class="text-center p-4"> 
+                <span class="excerpt d-block">Grooming Completo</span> 
+
+                <span class="price">
+                  <sup>L.</sup>
+                  <span class="number">450</span>
+                  <sub>/sesión</sub>
+                </span> 
+
+                <ul class="pricing-text mb-5"> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Baño premium
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Corte según raza
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Secado y cepillado
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Limpieza de oídos
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Corte de uñas
+                  </li> 
+                </ul> 
+
+                <a href="contact.html" class="btn btn-primary d-block px-2 py-3">
+                  Reservar ahora
+                </a> 
+              </div> 
+            </div> 
+          </div> 
+
+          <div class="col-md-4 ftco-animate"> 
+            <div class="block-7"> 
+              <div class="img" 
+                   style="background-image:url('images/pricing-3.jpg');">
+              </div> 
+
+              <div class="text-center p-4"> 
+                <span class="excerpt d-block">Spa Canino</span> 
+
+                <span class="price">
+                  <sup>L.</sup>
+                  <span class="number">650</span>
+                  <sub>/sesión</sub>
+                </span> 
+
+                <ul class="pricing-text mb-5"> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Baño premium
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Masaje relajante
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Tratamiento hidratante
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Corte y estilizado
+                  </li> 
+                  <li>
+                    <span class="fa fa-check mr-2"></span>Perfume canino
+                  </li> 
+                </ul> 
+
+                <a href="contact.html" class="btn btn-primary d-block px-2 py-3">
+                  Reservar ahora
+                </a> 
+              </div> 
+            </div> 
+          </div> 
+
+        </div> 
+      </div> 
+    </section> 
+
+    <section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb img" 
+             style="background-image:url('images/bg_3.jpg');"> 
+      <div class="overlay"></div> 
+      <div class="container"> 
+        <div class="row d-md-flex justify-content-center"> 
+          <div class="col-md-12"> 
+            <div class="wrap-appointment bg-white p-5"> 
+              <div class="row"> 
+                <div class="col-md-5 d-flex align-items-center"> 
+                  <div class="appointment-info"> 
+                    <h2 class="mb-3">Reserva tu cita</h2> 
+                    <p>
+                      Dale a tu mascota el cuidado que merece.
+                    </p> 
+                    <p>
+                      <span class="fa fa-phone"></span> +504 9999-2026
+                    </p> 
+                    <p>
+                      <span class="fa fa-envelope"></span> info@pawcare.com
+                    </p> 
+                  </div> 
+                </div> 
+
+                <div class="col-md-7"> 
+                  <form action="#" class="appointment-form"> 
+                    <div class="row"> 
+                      <div class="col-md-6"> 
+                        <div class="form-group"> 
+                          <input type="text" class="form-control" placeholder="Nombre"> 
+                        </div> 
+                      </div> 
+
+                      <div class="col-md-6"> 
+                        <div class="form-group"> 
+                          <input type="text" class="form-control" placeholder="Teléfono"> 
+                        </div> 
+                      </div> 
+
+                      <div class="col-md-6"> 
+                        <div class="form-group"> 
+                          <input type="text" class="form-control" placeholder="Fecha"> 
+                        </div> 
+                      </div> 
+
+                      <div class="col-md-6"> 
+                        <div class="form-group"> 
+                          <input type="text" class="form-control" placeholder="Hora"> 
+                        </div> 
+                      </div> 
+
+                      <div class="col-md-12"> 
+                        <div class="form-group"> 
+                          <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Mensaje"></textarea> 
+                        </div> 
+                      </div> 
+
+                      <div class="col-md-12"> 
+                        <div class="form-group"> 
+                          <input type="submit" value="Solicitar cita" class="btn btn-primary py-3 px-4"> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </form> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </section> 
+
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="row mb-5"> 
+
+          <div class="col-md-6 col-lg-3"> 
+            <div class="ftco-footer-widget mb-4"> 
+              <h2 class="ftco-heading-2">PawCare</h2> 
+              <p>
+                Cuidamos, consentimos y embellecemos a tu mascota con amor y dedicación.
+              </p> 
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"> 
+                <li class="ftco-animate">
+                  <a href="#"><span class="fa fa-twitter"></span></a>
+                </li> 
+                <li class="ftco-animate">
+                  <a href="#"><span class="fa fa-facebook"></span></a>
+                </li> 
+                <li class="ftco-animate">
+                  <a href="#"><span class="fa fa-instagram"></span></a>
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+
+          <div class="col-md-6 col-lg-3"> 
+            <div class="ftco-footer-widget mb-4 ml-md-5"> 
+              <h2 class="ftco-heading-2">Enlaces</h2> 
+              <ul class="list-unstyled"> 
+                <li><a href="index.html" class="py-2 d-block">Inicio</a></li> 
+                <li><a href="about.html" class="py-2 d-block">Nosotros</a></li> 
+                <li><a href="services.html" class="py-2 d-block">Servicios</a></li> 
+                <li><a href="gallery.html" class="py-2 d-block">Galería</a></li> 
+                <li><a href="pricing.html" class="py-2 d-block">Precios</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+
+          <div class="col-md-6 col-lg-3"> 
+            <div class="ftco-footer-widget mb-4"> 
+              <h2 class="ftco-heading-2">Consejos Recientes</h2> 
+              <div class="block-21 mb-4 d-flex"> 
+                <a class="blog-img mr-4" 
+                   style="background-image:url('images/pricing-3.jpg');"></a> 
+                <div class="text"> 
+                  <h3 class="heading">
+                    <a href="blog.html">Consejos para el cuidado de tu mascota</a>
+                  </h3> 
+                </div> 
+              </div> 
+
+              <div class="block-21 mb-4 d-flex"> 
+                <a class="blog-img mr-4" 
+                   style="background-image:url('images/pricing-1.jpg');"></a> 
+                <div class="text"> 
+                  <h3 class="heading">
+                    <a href="blog.html">La importancia del grooming</a>
+                  </h3> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+
+          <div class="col-md-6 col-lg-3"> 
+            <div class="ftco-footer-widget mb-4"> 
+              <h2 class="ftco-heading-2">¿Tienes preguntas?</h2> 
+              <div class="block-23 mb-3"> 
+                <ul> 
+                  <li>
+                    <span class="icon fa fa-map-marker"></span>
+                    <span class="text">Santa Cruz de Yojoa, Cortés, Honduras</span>
+                  </li> 
+                  <li>
+                    <a href="#">
+                      <span class="icon fa fa-phone"></span>
+                      <span class="text">+504 9999-2026</span>
+                    </a>
+                  </li> 
+                  <li>
+                    <a href="#">
+                      <span class="icon fa fa-paper-plane"></span>
+                      <span class="text">info@pawcare.com</span>
+                    </a>
+                  </li> 
+                </ul> 
+              </div> 
+            </div> 
+          </div> 
+
+        </div> 
+
+        <div class="row"> 
+          <div class="col-md-12 text-center"> 
+            <p class="copyright">
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script>
+              PawCare | Todos los derechos reservados
+            </p> 
+          </div> 
+        </div> 
+      </div> 
+    </footer> 
+
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/jquery-migrate-3.0.1.min.js"></script> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/jquery.easing.1.3.js"></script> 
+    <script src="js/jquery.waypoints.min.js"></script> 
+    <script src="js/jquery.stellar.min.js"></script> 
+    <script src="js/owl.carousel.min.js"></script> 
+    <script src="js/jquery.magnific-popup.min.js"></script> 
+    <script src="js/jquery.animateNumber.min.js"></script> 
+    <script src="js/bootstrap-datepicker.js"></script> 
+    <script src="js/jquery.timepicker.min.js"></script> 
+    <script src="js/scrollax.min.js"></script> 
+    <script src="js/main.js"></script> 
+
+  </body>
+</html>
